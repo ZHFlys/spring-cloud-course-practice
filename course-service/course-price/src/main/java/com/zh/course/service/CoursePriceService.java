@@ -1,6 +1,9 @@
 package com.zh.course.service;
 
+import com.zh.course.entity.CourseAndPrice;
 import com.zh.course.entity.CoursePrice;
+
+import java.util.List;
 
 /**
  * @author ：郑小浩
@@ -17,4 +20,6 @@ public interface CoursePriceService {
      * @return CoursePrice
      */
     CoursePrice getCoursePrice(Integer courseId);
+
+    List<CourseAndPrice> getCourseAndPrice();
 }

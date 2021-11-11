@@ -1,10 +1,14 @@
-package com.zh.course;
+package com.zh.course.controller;
 
-import com.zh.entity.CoursePrice;
-import com.zh.service.CoursePriceService;
+import com.zh.course.client.CourseListClient;
+import com.zh.course.entity.Course;
+import com.zh.course.entity.CoursePrice;
+import com.zh.course.service.CoursePriceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author ：郑小浩
@@ -17,10 +21,18 @@ public class CoursePriceController {
     @Autowired
     CoursePriceService coursePriceService;
 
+    @Autowired
+    CourseListClient courseListClient;
+
     @GetMapping("/price")
     public Integer getCoursePrice(Integer courseId){
         CoursePrice coursePrice = coursePriceService.getCoursePrice(courseId);
         return coursePrice.getPrice();
     }
 
+    @GetMapping("/coursesInPrice")
+    public List<Course> getCoursePrice(){
+        List<Course> courses = courseListClient.courseList();
+        return courses;
+    }
 }

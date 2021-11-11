@@ -1,11 +1,9 @@
-package com.zh.dao;
+package com.zh.course.dao;
 
-import com.zh.entity.CoursePrice;
+import com.zh.course.entity.CoursePrice;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 
 /**

@@ -1,6 +1,6 @@
-package com.zh.service;
+package com.zh.course.service;
 
-import com.zh.entity.CoursePrice;
+import com.zh.course.entity.CoursePrice;
 
 /**
  * @author ：郑小浩

@@ -1,4 +1,4 @@
-package com.zh.entity;
+package com.zh.course.entity;
 
 /**
  * @author ：郑小浩

@@ -1,8 +1,8 @@
-package com.zh.service.impl;
+package com.zh.course.service.impl;
 
-import com.zh.dao.CoursePriceMapper;
-import com.zh.entity.CoursePrice;
-import com.zh.service.CoursePriceService;
+import com.zh.course.dao.CoursePriceMapper;
+import com.zh.course.entity.CoursePrice;
+import com.zh.course.service.CoursePriceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
